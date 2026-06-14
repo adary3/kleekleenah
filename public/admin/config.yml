@@ -1,0 +1,87 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: public/images
+public_folder: /images
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "books"
+    label: "Books"
+    folder: "src/content/books"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Year", name: "year", widget: "string" }
+      - { label: "Book Number", name: "number", widget: "string", hint: "e.g. Book I, Book II" }
+      - { label: "Tagline", name: "tagline", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Cover Style", name: "coverStyle", widget: "string", hint: "CSS class for cover design" }
+      - { label: "Price / Status", name: "price", widget: "string", hint: "e.g. Free, $12, Order via email" }
+      - { label: "Selar Link", name: "selarLink", widget: "string", required: false }
+      - { label: "Tags", name: "tags", widget: "list", default: [] }
+      - { label: "Featured", name: "featured", widget: "boolean", default: true }
+      - { label: "Order", name: "order", widget: "number", hint: "Display order (1 = first)" }
+
+  - name: "services"
+    label: "Services"
+    folder: "src/content/services"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Number", name: "number", widget: "string", hint: "e.g. 01, 02" }
+      - { label: "Icon", name: "icon", widget: "string", hint: "Single emoji or symbol" }
+      - { label: "Anchor ID", name: "anchorId", widget: "string", hint: "e.g. ai-web-apps" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - label: "Scope Items"
+        name: "scope"
+        widget: "list"
+        field: { label: "Item", name: "item", widget: "string" }
+      - { label: "WhatsApp Message", name: "whatsappMsg", widget: "string" }
+      - { label: "Email Subject", name: "emailSubject", widget: "string" }
+      - { label: "Order", name: "order", widget: "number" }
+
+  - name: "projects"
+    label: "Projects / Work"
+    folder: "src/content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Year", name: "year", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "URL", name: "url", widget: "string", required: false }
+      - { label: "Status", name: "status", widget: "select", options: ["Live", "Building", "Shipped", "Coming Soon"] }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - { label: "Order", name: "order", widget: "number" }
+
+  - name: "manifesto"
+    label: "Manifesto"
+    files:
+      - label: "Manifesto"
+        name: "manifesto"
+        file: "src/content/manifesto.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "Global Settings"
+        name: "settings"
+        file: "src/content/settings.md"
+        fields:
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "WhatsApp Number", name: "whatsapp", widget: "string" }
+          - { label: "Twitter/X", name: "twitter", widget: "string" }
+          - { label: "LinkedIn", name: "linkedin", widget: "string" }
+          - { label: "Fiverr", name: "fiverr", widget: "string" }
+          - { label: "Selar", name: "selar", widget: "string" }
