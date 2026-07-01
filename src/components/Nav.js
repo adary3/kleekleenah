@@ -66,7 +66,7 @@ export default function Nav() {
               <div style={{position:'absolute',top:'calc(100% + .6rem)',right:0,background:'#0C0B12',border:'1px solid rgba(212,175,114,0.15)',minWidth:'190px',zIndex:1000,overflow:'hidden',boxShadow:'0 8px 32px rgba(0,0,0,0.4)'}}>
                 <a
                   href="https://wa.me/250798695863?text=Hi%20Klee%2C%20I%27d%20like%20to%20hire%20you"
-                  target="_blank" rel="noreferrer"
+                  target="_blank" rel="noopener noreferrer"
                   onClick={() => setHireOpen(false)}
                   style={{display:'flex',alignItems:'center',gap:'.8rem',padding:'1rem 1.2rem',fontFamily:"'JetBrains Mono',monospace",fontSize:'.6rem',letterSpacing:'.12em',textTransform:'uppercase',color:'var(--ink-dim)',textDecoration:'none',borderBottom:'1px solid rgba(237,232,223,0.07)',transition:'all .2s'}}
                   onMouseEnter={e=>{e.currentTarget.style.color='var(--gold)';e.currentTarget.style.background='rgba(212,175,114,0.05)';}}
@@ -96,7 +96,7 @@ export default function Nav() {
         <button className="mobile-menu-btn" onClick={() => goToSection('books')}>Books</button>
         <Link to="/manifesto" onClick={close}>Manifesto</Link>
         <div style={{display:'flex',flexDirection:'column',gap:'.8rem',alignItems:'center',marginTop:'.5rem'}}>
-          <a href="https://wa.me/250798695863?text=Hi%20Klee%2C%20I%27d%20like%20to%20hire%20you" target="_blank" rel="noreferrer" className="m-hire" onClick={close}>WhatsApp Me ↗</a>
+          <a href="https://wa.me/250798695863?text=Hi%20Klee%2C%20I%27d%20like%20to%20hire%20you" target="_blank" rel="noopener noreferrer" className="m-hire" onClick={close}>WhatsApp Me ↗</a>
           <a href="mailto:hello@kleeonai.com?subject=Hire%20Enquiry" className="m-hire m-hire-outline" onClick={close}>Email Me ↗</a>
         </div>
       </div>

@@ -17,7 +17,7 @@ export function ThankYou() {
       </p>
       <div style={{display:'flex',gap:'1rem',flexWrap:'wrap',justifyContent:'center'}}>
         <Link to="/" className="btn-p">Back to KleeOnAI ↗</Link>
-        <Link to="/free" className="btn-s">Get another pack</Link>
+        <a href="/free" className="btn-s">Get another pack</a>
       </div>
       <div style={{fontFamily:"'JetBrains Mono',monospace",fontSize:'.52rem',color:'var(--ink-dim)',opacity:.4,marginTop:'2rem',letterSpacing:'.08em'}}>Built by KleeOnAI · kleeonai.com</div>
     </main>

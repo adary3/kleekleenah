@@ -10,3 +10,6 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' https://www.googletagmanager.com https://identity.netlify.com 'sha256-t4XBTjibEgqrMd7Dgpquu2xRn5azSJiMTZRnWQGfRqM=' 'sha256-fy+0MgWZpMiCMPPZ8XVeV0rN/OD9nGyGEDl9EfhlIsM='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none';"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"

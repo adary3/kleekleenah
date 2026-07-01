@@ -25,24 +25,26 @@ export default function Footer() {
             <Link to="/">Home</Link>
             <Link to="/work">Work</Link>
             <Link to="/manifesto">Manifesto</Link>
-            <Link to="/free">Free Pack</Link>
+            <a href="/free">Free Pack</a>
+            <Link to="/privacy">Privacy</Link>
+            <Link to="/terms">Terms</Link>
           </div>
           <div className="footer-col">
             <div className="footer-col-title">Connect</div>
-            <a href="https://x.com/kleeonai" target="_blank" rel="noreferrer">X — @kleeonai</a>
-            <a href="https://www.linkedin.com/in/abakar-ahmat-oumar-122b2a288/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="https://www.fiverr.com/kleeon_28" target="_blank" rel="noreferrer">Fiverr</a>
-            <a href="https://selar.com/m/abakar-ahmat-oumar1" target="_blank" rel="noreferrer">Selar</a>
-            <a href="https://wa.me/250798695863" target="_blank" rel="noreferrer">WhatsApp</a>
+            <a href="https://x.com/kleeonai" target="_blank" rel="noopener noreferrer">X — @kleeonai</a>
+            <a href="https://www.linkedin.com/in/abakar-ahmat-oumar-122b2a288/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.fiverr.com/kleeon_28" target="_blank" rel="noopener noreferrer">Fiverr</a>
+            <a href="https://selar.com/m/abakar-ahmat-oumar1" target="_blank" rel="noopener noreferrer">Selar</a>
+            <a href="https://wa.me/250798695863" target="_blank" rel="noopener noreferrer">WhatsApp</a>
           </div>
         </div>
         <div className="footer-bottom">
           <span className="footer-copy">© 2026 KleeOnAI — All rights reserved.</span>
           <div className="footer-socials">
-            <a href="https://x.com/kleeonai" target="_blank" rel="noreferrer">X</a>
-            <a href="https://www.linkedin.com/in/abakar-ahmat-oumar-122b2a288/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="https://selar.com/m/abakar-ahmat-oumar1" target="_blank" rel="noreferrer">Selar</a>
-            <a href="https://wa.me/250798695863" target="_blank" rel="noreferrer">WhatsApp</a>
+            <a href="https://x.com/kleeonai" target="_blank" rel="noopener noreferrer">X</a>
+            <a href="https://www.linkedin.com/in/abakar-ahmat-oumar-122b2a288/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://selar.com/m/abakar-ahmat-oumar1" target="_blank" rel="noopener noreferrer">Selar</a>
+            <a href="https://wa.me/250798695863" target="_blank" rel="noopener noreferrer">WhatsApp</a>
           </div>
         </div>
       </div>

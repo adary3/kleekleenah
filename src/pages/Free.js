@@ -3,11 +3,14 @@ import React, { useEffect } from 'react';
 export default function Free() {
   useEffect(() => {
     const obs = new IntersectionObserver(
-      els => els.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      function(els) {
+        els.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('visible'); });
+      },
       { threshold: 0.08 }
     );
-    document.querySelectorAll('.reveal').forEach(r => obs.observe(r));
-    return () => obs.disconnect();
+    var reveals = document.querySelectorAll('.reveal');
+    for (var i = 0; i < reveals.length; i++) { obs.observe(reveals[i]); }
+    return function() { obs.disconnect(); };
   }, []);
 
   return (
